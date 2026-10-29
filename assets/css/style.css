@@ -259,3 +259,20 @@ h2{ font-family:var(--mono); font-size:1.5rem; margin:0 0 12px; }
   .cursor{ animation:none; }
   .card{ transition:none; }
 }
+
+/* Completed project descriptions and evidence */
+.project-intro{color:var(--sub);max-width:82ch;margin:0 0 22px;line-height:1.65;}
+.featured-projects{margin-bottom:48px;}
+.featured-card{border-top:2px solid var(--accent2);}
+.sprint-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:12px 0 18px;flex-wrap:wrap;}
+.sprint-heading .sec-title{margin-bottom:8px;}
+.sprint-heading h2{margin-bottom:0;}
+.project-index-links{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:24px;font:0.8rem var(--mono);color:var(--accent2);}
+.card .project-result{font-size:0.82rem;color:var(--ink);border-left:2px solid var(--accent2);padding-left:10px;flex-grow:0;}
+.card .project-mode,.card .project-note{font-size:0.76rem;line-height:1.6;flex-grow:0;}
+.sprint-card .metric{line-height:1.6;}
+.card-link:focus-visible,.project-index-links a:focus-visible,.project-archive summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px;}
+.project-archive{margin-top:40px;border-top:1px solid var(--line);padding-top:24px;}
+.project-archive summary{font:0.88rem var(--mono);color:var(--accent);cursor:pointer;margin-bottom:20px;}
+#projects,#sprint-projects{scroll-margin-top:80px;}
+@media(max-width:640px){.card{min-width:0;}.card-link{overflow-wrap:anywhere;}.sprint-heading .metric{max-width:100%;}.project-index-links{gap:14px;}}

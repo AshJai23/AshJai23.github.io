@@ -1,48 +1,32 @@
 # Ashlin Jayakumar — Portfolio
 
-Personal portfolio site for Ashlin Jayakumar, Data Scientist & ML Engineer.
-Static HTML/CSS/JS — no build step, deploys straight to GitHub Pages.
+Existing public portfolio at https://ashjai23.github.io, hosted on GitHub Pages.
+Static HTML/CSS/JavaScript; no build step or backend is required for this gallery.
 
-**Live site:** `https://AshJai23.github.io` (once Pages is enabled — see below)
+## Projects
 
-## Structure
+- Three featured applications: Cyber Threat Detection, ATS Tracker / AJ.ai, and UK Student Copilot.
+- Nine completed data-science sprint projects with descriptions, tools, measured results and exact source links.
+- Eight earlier project summaries retained in an expandable section.
 
-```
-index.html            main page (about, experience, projects, skills, education, contact)
-assets/css/style.css  styles ("Signal" dark console theme)
-assets/js/main.js     mobile nav + footer year
-assets/Ashlin_Jayakumar_CV.pdf   downloadable résumé (linked from the hero button)
-```
+Project cards link to code and documentation. They do not deploy the Python/ML
+applications themselves. Historical replays, delayed observations and local
+prototypes are labelled; planned projects are not counted as completed.
 
-## Run locally
+The sprint gallery is a static snapshot updated on 29 October 2026. Edit the
+`data-science-sprint` marker block in index.html when another project has actually
+been tested/published. Preserve data modes and negative baseline results.
 
-Just open `index.html` in a browser, or serve it:
+## Files
 
-```bash
-npx serve .
-```
+- index.html — page content and project cards.
+- assets/css/style.css — existing Signal console theme and responsive cards.
+- assets/js/main.js — mobile navigation and footer year.
+- assets/Ashlin_Jayakumar_CV.pdf — existing résumé, unchanged by this update.
 
-## Deploy to GitHub Pages
+## Publishing
 
-1. Create a new **public** repo on GitHub named exactly `AshJai23.github.io`
-   (that exact name turns on a user site at the root domain).
-2. From this folder:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial portfolio"
-   git branch -M main
-   git remote add origin https://github.com/AshJai23/AshJai23.github.io.git
-   git push -u origin main
-   ```
-3. In the repo → **Settings → Pages** → Source: `Deploy from a branch` →
-   Branch: `main` / `root`. Save.
-4. Site goes live at `https://AshJai23.github.io` within a minute or two.
-
-## Editing
-
-- Swap in real project repo links: replace the `https://github.com/AshJai23`
-  placeholders in the project cards (`index.html`) with each project's actual
-  repo URL once pushed.
-- Update `assets/Ashlin_Jayakumar_CV.pdf` any time the résumé changes — the
-  filename is what's linked from the "Download résumé" button.
+GitHub Pages publishes the existing main branch/root. Commit normal fast-forward
+changes; do not reinitialise this repository or force-push. A successful source
+commit may take time to appear on Pages. Verify the deployed page after its
+build completes. The profile README in AshJai23/AshJai23 is maintained separately.
